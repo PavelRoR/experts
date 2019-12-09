@@ -1,0 +1,34 @@
+-var head_url = 'https://experts.mastervision.su/';
+-var head_title = '«Терапевтическая сессия эксперта по запросу»';
+-var head_description = 'Специалист-профессионал поможет вам найти первопричины ваших проблем со здоровьем, финансами, отношениями, а также пути их решения';
+//- -var head_img = 'img/banner.jpg';
+-var styles = 'css/styles.min.css';
+-var fav_ico = 'favicon.ico';
+-var fav_png = 'favicon.png';
+
+mixin b(cl,href,p,target)
+	a.button(class=cl href=href target=target)=p
+mixin gt(cl,h3)
+	h3.general-title(class=cl)=h3
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		include pug/header
+		.container
+			+gt('','Этот мастер-класс необходим тем, кто:')
+		include pug/main/1.main.pug
+		include pug/main/2.for.pug
+		include pug/main/3.session.pug
+		include pug/main/4.effect.pug
+		include pug/main/5.prices.pug
+		include pug/main/6.experts.pug
+		include pug/main/7.last.pug
+		include pug/main/8.footer.pug
+		include pug/main/9.scripts.pug
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts
