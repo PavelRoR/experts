@@ -1,0 +1,51 @@
+#prices
+	padding 110px 0 210px
+	background-image url(../img/backs/prices-bg.png)
+	background-repeat no-repeat
+	background-position center bottom
+	background-size: cover
+.facultatives-table
+	width 100%
+	max-width 830px
+	margin 0 auto
+	display: table
+	&-col
+		padding 54px 0
+		display: table-cell
+		&:first-of-type
+			width 45%
+			padding 54px 28px 54px 35px
+		&:nth-of-type(2)
+			width 25%
+			padding 54px 28px
+			text-align: center
+		&:last-of-type
+			width 30%
+			padding 54px 35px 54px 28px
+	&-title
+		font-family: OS
+		font-size: 25px
+		color: #f3d31b
+		margin-bottom: 25px
+	&-text
+		color #fff
+		span
+			font-family: ABk
+	&-price
+		font-family: OS
+		font-size: 28px
+		color #f3d31b
+	&-row
+		display: table-row
+		width 100%
+		&:nth-of-type(2n)
+			background-color: #E5C36C
+			.facultatives-table-title
+			.facultatives-table-text
+			.facultatives-table-price
+				color #232939
+			.button
+				color#232929
+				border-color: #232929
+		&:nth-of-type(2n+1)
+			background-color: #1A2437
