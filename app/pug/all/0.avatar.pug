@@ -1,0 +1,42 @@
+section.expert
+	.container
+		h3.expert-name=name
+		.about
+			img(src=src, alt=name).about-name
+			each p in pp
+				p.about-text=p
+		.row
+			if qq2
+				.col-md-4.col-sm-4
+					if diplomas
+						h4.diplomas-title=diplomas
+					ul.diplomas-list
+						each d in dd
+							li=d
+				.col-md-4.col-sm-4
+					if q_title
+						h4.queries-title=q_title
+					ul.queries-list
+						each q1 in qq1
+							li=q1
+				.col-md-4.col-sm-4
+					if q_title_2
+						h4.queries-title=q_title_2
+					ul.queries-list
+						each q2 in qq2
+							li=q2
+					if else_text
+						p.else-text=else_text
+			else
+				.col-md-4.col-sm-4
+					if diplomas
+						h4.diplomas-title=diplomas
+					ul.diplomas-list
+						each d in dd
+							li=d
+				.col-md-8.col-sm-8
+					h4.queries-title=q_title
+					ul.queries-list
+						each q1 in qq1
+							li=q1
+		+b('button-dark button-expert','../#prices','Записатся','')

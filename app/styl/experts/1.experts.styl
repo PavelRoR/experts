@@ -1,0 +1,90 @@
+.main-title
+	font-size: 36px;
+	font-family:OS
+	// color: rgb(255, 224, 19);
+	text-transform: uppercase;
+	text-align: center
+	margin-top: 60px
+	line-height: 1.667;
+.expert-name
+	// text-align: center
+	margin-bottom: 40px
+	font-family: OS
+	font-size: 40px
+.about
+	overflow hidden
+	margin-bottom: 20px
+	&-name
+		float left
+		margin 0 25px 25px 0
+		width 100%
+		max-width 340px
+	&-text
+		margin-bottom: 15px
+.diplomas-title
+.queries-title
+	font-family: OS
+	font-size: 22px
+	margin-bottom:  25px
+.queries-list
+.diplomas-list
+	li
+		padding-left: 20px
+		position relative
+		margin-bottom: 15px
+		list-style none
+		&:before
+			content: ''
+			display block
+			position: absolute
+			top 13px
+			left 0
+			border-radius: 50px
+			background-color: #fedc18
+			width 6px
+			height 6px
+.expert
+	padding 60px 0 90px
+	&:nth-of-type(2n)
+		color #ffffff
+		background-color: #1A2437
+		position relative
+		&:before
+			content ''
+			display block
+			position: absolute
+			width 100%
+			height 60px
+			top -60px
+			left 0
+			right 0
+			background-image url(../img/backs/effect-top-bg.png)
+			background-repeat no-repeat
+			background-position: bottom center
+			background-size: 100% 100%
+		&:after
+			content ''
+			display block
+			position: absolute
+			width 100%
+			height 60px
+			bottom -60px
+			left 0
+			right 0
+			background-image url(../img/backs/effect-bottom-bg.png)
+			background-repeat no-repeat
+			background-position: top center
+			background-size: 100% 100%
+		&:last-of-type
+			&:after
+				content none
+		.expert-name
+		.diplomas-title
+		.queries-title
+		.diplomas-list	li
+			color #fedc18
+.else-text
+	font-family: OS
+	color #fedc18
+.button-expert
+	margin-top: 50px
