@@ -1,0 +1,54 @@
+-var head_url = 'https://experts.mastervision.su/center/all/';
+-var head_title = '«Ваши эксперты-помощники»';
+//- -var head_description = 'Специалист-профессионал поможет вам найти первопричины ваших проблем со здоровьем, финансами, отношениями, а также пути их решения';
+//- -var head_img = 'img/banner.jpg';
+-var styles = '../../css/experts.min.css';
+-var fav_ico = '../../favicon.ico';
+-var fav_png = '../../favicon.png';
+-var oferta = 'https://mastervision.su/oferta.docx'
+
+mixin b(cl,href,p,target)
+	a.button(class=cl href=href target=target)=p
+mixin gt(cl,h3)
+	h3.general-title(class=cl)=h3
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		include pug/header
+		.container
+			h1.main-title Наши эксперты
+		include pug/center-all/experts/expert-1
+		include pug/center-all/experts/expert-2
+		include pug/center-all/experts/expert-3
+		include pug/center-all/experts/expert-4
+		include pug/center-all/experts/expert-5
+		include pug/center-all/experts/expert-6
+		include pug/center-all/experts/expert-7
+		include pug/center-all/experts/expert-8
+		include pug/center-all/experts/expert-9
+		include pug/center-all/experts/expert-10
+		include pug/center-all/experts/expert-11
+		include pug/center-all/experts/expert-12
+		include pug/center-all/experts/expert-13
+		include pug/center-all/experts/expert-14
+		include pug/center-all/experts/expert-15
+		include pug/center-all/experts/expert-16
+		include pug/center-all/experts/expert-17
+		include pug/center-all/experts/expert-18
+		include pug/center-all/experts/expert-19
+		//- include center-pug/all/experts/expert-20
+		//- include center-pug/all/experts/expert-21
+		include pug/center-all/experts/expert-22
+		include pug/center-all/experts/expert-23
+		include pug/center-all/experts/expert-24
+		include pug/center-all/experts/expert-25
+		include pug/center-all/experts/expert-26
+		include pug/center-all/experts/expert-27
+		include pug/main/8.footer.pug
+		include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts

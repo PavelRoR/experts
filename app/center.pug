@@ -1,10 +1,10 @@
--var head_url = 'https://experts.mastervision.su/';
+-var head_url = 'https://experts.mastervision.su/center/';
 -var head_title = '«Терапевтическая сессия эксперта по запросу»';
 -var head_description = 'Специалист-профессионал поможет вам найти первопричины ваших проблем со здоровьем, финансами, отношениями, а также пути их решения';
 //- -var head_img = 'img/banner.jpg';
--var styles = 'css/styles.min.css';
--var fav_ico = 'favicon.ico';
--var fav_png = 'favicon.png';
+-var styles = '../css/styles.min.css';
+-var fav_ico = '../favicon.ico';
+-var fav_png = '../favicon.png';
 -var oferta = 'https://mastervision.su/oferta.docx'
 
 mixin b(cl,href,p,target)
@@ -24,10 +24,10 @@ html(lang="ru")
 		include pug/main/2.for.pug
 		include pug/main/3.session.pug
 		include pug/main/4.effect.pug
-		include pug/main/5.prices.pug
-		include pug/main/6.experts.pug
+		include pug/center/1.prices.pug
+		include pug/center/2.experts.pug
 		include pug/main/7.last.pug
 		include pug/main/8.footer.pug
-		include pug/main/9.scripts.pug
+		script(src="../js/scripts.min.js")
 		include pug/scripts/chat
 		include pug/scripts/body_bottom_scripts

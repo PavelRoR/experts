@@ -5,6 +5,7 @@
 -var styles = '../css/experts.min.css';
 -var fav_ico = '../favicon.ico';
 -var fav_png = '../favicon.png';
+-var oferta = 'https://mastervision.su/oferta.docx'
 
 mixin b(cl,href,p,target)
 	a.button(class=cl href=href target=target)=p
@@ -40,8 +41,8 @@ html(lang="ru")
 		include pug/all/experts/expert-17
 		include pug/all/experts/expert-18
 		include pug/all/experts/expert-19
-		include pug/all/experts/expert-20
-		include pug/all/experts/expert-21
+		//- include pug/all/experts/expert-20
+		//- include pug/all/experts/expert-21
 		include pug/all/experts/expert-22
 		include pug/all/experts/expert-23
 		include pug/all/experts/expert-24
@@ -49,5 +50,5 @@ html(lang="ru")
 		include pug/all/experts/expert-26
 		include pug/all/experts/expert-27
 		include pug/main/8.footer.pug
-		//- include pug/scripts/chat
+		include pug/scripts/chat
 		include pug/scripts/body_bottom_scripts

@@ -1,8 +1,6 @@
 A = 'Akrobat', sans-serif;
-ABd = 'AkrobatBold', sans-serif;
 ABk = 'AkrobatBlack', sans-serif;
 OS = 'OldStandardTT', serif;
-J = 'Jura', sans-serif
 
 @font-face {
 	font-family: 'Akrobat';
@@ -28,18 +26,7 @@ J = 'Jura', sans-serif
 	font-weight: 900;
 	font-style: normal;
 }
-@font-face {
-	font-family: 'AkrobatBold';
-	src: url('../fonts/AkrobatBold.eot');
-	src: url('../fonts/AkrobatBold.eot') format('embedded-opentype'),
-		 url('../fonts/AkrobatBold.woff2') format('woff2'),
-		 url('../fonts/AkrobatBold.woff') format('woff'),
-		 url('../fonts/AkrobatBold.ttf') format('truetype'),
-		 url('../fonts/AkrobatBold.svg#AkrobatBold') format('svg');
-	font-display: fallback;
-	font-weight: bold;
-	font-style: normal;
-}
+
 @font-face {
 	font-family: 'OldStandardTT';
 	src: url('../fonts/OldStandardTT.eot');
@@ -52,18 +39,7 @@ J = 'Jura', sans-serif
 	font-weight: normal;
 	font-style: normal;
 }
-@font-face {
-	font-family: 'Jura';
-	src: url('../fonts/Jura.eot');
-	src: url('../fonts/Jura.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Jura.woff2') format('woff2'),
-		url('../fonts/Jura.woff') format('woff'),
-		url('../fonts/Jura.ttf') format('truetype'),
-		url('../fonts/Jura.svg#Jura') format('svg');
-	font-weight: normal;
-	font-style: normal;
-	font-display: fallback;
-}
+
 @import '../_css/bootstrap.min.css'
 
 *
@@ -90,38 +66,6 @@ header
 footer
 	width 100%
 	display block
-.video-wrapper
-	margin 0 auto
-	position relative
-	width 100%
-	&:before
-		content ''
-		height 0
-		padding-top 56.25%
-		display block
-	&:after
-		content: ''
-		display block
-		position: absolute
-		top: 0
-		left 0
-		right 0
-		width: 100%
-		height 70px
-	img,
-	iframe
-		position absolute
-		width 100%
-		height 100%
-		display block
-		background-color #000
-		border-radius 3px
-		border: 0
-		top 0
-		left 0
-		right 0
-		bottom 0
-		cursor pointer
 .button
 	display block
 	text-align: center
@@ -158,30 +102,6 @@ footer
 			background-color: #000
 			border: 2px solid #d4af37
 			color: #d4af37
-.general-title
-	text-align: center
-	font-size: 30px;
-	font-family: OS
-	color: rgb(254, 220, 24);
-	line-height: 1;
-	margin-bottom: 50px
-	padding 0 250px
-	overflow hidden
-	position relative
-	&:before
-	&:after
-		content: ''
-		position: absolute
-		width 250px
-		height 6px
-		background-image url(../img/backs/title-bg.png)
-		bottom: 9px
-	&:before
-		right calc(100% - 250px)
-	&:after
-		left calc(100% - 250px)
-	&-dark
-		color #000
 @import 'main/0.header'
 @import 'experts/1.experts'
 @import 'main/8.footer'
