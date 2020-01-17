@@ -18,7 +18,5 @@ $(document).ready(function () {
             scrollTop: g
         }, 1500)
     });
-
-
     /*Конец документа*/
 });
