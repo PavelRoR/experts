@@ -1,0 +1,107 @@
+.main-title {
+  font-size: 36px;
+  font-family: OS;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 60px;
+  line-height: 1.667;
+}
+.expert-name {
+  margin-bottom: 40px;
+  font-family: OS;
+  font-size: 40px;
+}
+.about {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.about-name {
+  float: left;
+  margin: 0 25px 25px 0;
+  width: 100%;
+  max-width: 340px;
+}
+.about-text {
+  margin-bottom: 15px;
+}
+.diplomas-title,
+.queries-title {
+  font-family: OS;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+.queries-list li,
+.diplomas-list li {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 15px;
+  list-style: none;
+}
+.queries-list li:before,
+.diplomas-list li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 0;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  background-color: #fedc18;
+  width: 6px;
+  height: 6px;
+}
+.expert {
+  padding: 60px 0 90px;
+}
+.expert:nth-of-type(2n) {
+  color: #fff;
+  background-color: #1a2437;
+  position: relative;
+}
+.expert:nth-of-type(2n):before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  top: -60px;
+  left: 0;
+  right: 0;
+  background-image: url("../img/backs/effect-top-bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100% 100%;
+}
+.expert:nth-of-type(2n):after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  background-image: url("../img/backs/effect-bottom-bg.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 100%;
+}
+.expert:nth-of-type(2n):last-of-type:after {
+  content: none;
+}
+.expert:nth-of-type(2n) .expert-name,
+.expert:nth-of-type(2n) .diplomas-title,
+.expert:nth-of-type(2n) .queries-title,
+.expert:nth-of-type(2n) .diplomas-list li {
+  color: #fedc18;
+}
+.expert:nth-of-type(2n + 1) {
+  color: #1a2437;
+}
+.else-text {
+  font-family: OS;
+  color: #fedc18;
+}
+.button-expert {
+  margin-top: 50px;
+}
